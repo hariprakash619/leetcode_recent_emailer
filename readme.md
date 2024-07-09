@@ -9,22 +9,14 @@ Prerequisites
 Python 3.x
 Gmail account for sending emails
 Installation
-Clone the repository:
-
-bash
-Copy code
+### Clone the repository:
 git clone https://github.com/yourusername/leetcode-recent-emailer.git
 cd leetcode-recent-emailer
-Install the required packages:
-
-bash
-Copy code
+### Install the required packages:
 pip install requests
-Configuration
-Update your LeetCode username and email credentials in the script:
 
-python
-Copy code
+### Variables
+Update your LeetCode username and email credentials in the script:
 variables = {
     "username": "your_leetcode_username",
     "limit": 20
@@ -38,13 +30,11 @@ Go to Google App Passwords.
 Select "Mail" as the app and "Other" for the device name.
 Generate the app password and copy the 16-digit password.
 Replace "your_email_password" in the script with this 16-digit app password.
-Usage
-Run the script:
 
-bash
-Copy code
+### Run the script:
 python3 main.py
-The script will:
+
+### The script will:
 
 Fetch recent submissions from LeetCode.
 Generate a list of unique problem URLs.
@@ -52,7 +42,7 @@ Email the list to the specified email address.
 Script Breakdown
 Fetch LeetCode Submissions:
 
-python
+# python
 Copy code
 import requests
 from datetime import datetime
